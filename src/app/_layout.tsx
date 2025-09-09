@@ -7,7 +7,12 @@ export default function RootLayout() {
   return (
     <React.Fragment>
       <StatusBar style="auto" />
-      <Stack />
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{ animation: "slide_from_bottom", title: "Main Screen" }}
+        />
+      </Stack>
     </React.Fragment>
   );
 }
